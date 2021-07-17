@@ -13,4 +13,4 @@ Questions, concerns, emotional outbursts? Reach out!
 - Twitter: <a href="https://twitter.com/iamserda">@iamserda</a>
 - LinkedIn: <a href="https://linkedin.com/in/iamserda" target="_blank">iamserda</a>
 
-Made with ❤️ in Inwood, NYC. Circa March 2021.
+Made with ❤️ in Inwood, NYC. Circa 2021.
