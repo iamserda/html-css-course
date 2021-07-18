@@ -176,11 +176,7 @@ footer p {
 .related {
     width: 100%;
     margin: 0.125em auto;
-
-}
-
-.related:hover {
-    background-color: rgba(80, 77, 255, 0.8)
+    border: 1px solid red;
 }
 
 .related a {
@@ -188,10 +184,6 @@ footer p {
     width: 100%;
     text-decoration: none;
     color: rgb(79, 77, 255);
-}
-
-.related:hover a {
-    color: white;
 }
 
 .related img {
