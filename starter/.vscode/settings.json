@@ -1,0 +1,12 @@
+{
+    "search.useGlobalIgnoreFiles": true,
+    "git.ignoredRepositories": [
+        ".DS_Store",
+        "*/.DS_Store",
+        ".vscode"
+    ],
+    "gitProjectManager.ignoredFolders": [
+        
+    
+    ]
+}
