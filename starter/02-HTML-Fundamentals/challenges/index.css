@@ -1,5 +1,114 @@
+html {
+    height: 100vh;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+main {
+    height: 100%;
+    margin: auto;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.component * {
+    color: black;
+}
+
+.component {
+    position: relative;
+    background-color: white;
+    color: black;
+    border: 5px solid black;
+    padding: 1em 1em 2em;
+    width: 90%;
+    margin: 1em auto;
+}
+
+.component h1 {
+    color: black;
+    margin: 0 auto 1em;
+    text-align: center;
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
 .component img {
     width: 100%;
     max-width: 300px;
     height: auto;
+    padding-right: 1em;
+}
+
+.component button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: none;
+    padding: 0.5em 1em;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.component a:link {
+    color: black;
+    padding: 0.125em 0.25em;
+}
+
+.component a:visited {
+    color: grey;
+}
+
+.component a:hover {
+    background-color: black;
+    color: white;
+}
+
+.component a:active {
+    background-color: blue;
+    color: white;
+}
+
+
+/* .clearfix:after {
+    content: "";
+    clear: both;
+} */
+
+#component2 button {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.25rem;
+    border-top: 5px solid black;
+    clear: both;
+}
+
+#component2 button:hover {
+    background-color: white;
+    color: black;
+
+}
+
+#component1 .product-image,
+#component2 .product-image,
+#component1 .product-description,
+#component2 .product-description {
+    float: left;
+}
+
+#component1 .clearfix::after,
+#component2 .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
