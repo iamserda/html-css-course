@@ -1,5 +1,5 @@
 html {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 html,
@@ -26,7 +26,7 @@ footer {
     color: black;
     border: 5px solid black;
     padding: 1em 1em 2em;
-    width: 90%;
+    width: 80%;
     margin: 1em auto;
 }
 
@@ -34,18 +34,11 @@ footer {
     color: black;
     margin: 0 auto 1em;
     text-align: center;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 h2 {
     font-size: 1em;
-}
-
-.component img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    padding-right: 1em;
 }
 
 .component button {
@@ -79,13 +72,8 @@ h2 {
     color: white;
 }
 
-
-/* .clearfix:after {
-    content: "";
-    clear: both;
-} */
-
-#component2 button {
+#component2 button,
+#component3 button {
     width: 100%;
     padding: 0.5em;
     font-size: 1.25rem;
@@ -93,22 +81,162 @@ h2 {
     clear: both;
 }
 
-#component2 button:hover {
+#component2 button:hover,
+#component3 button:hover {
     background-color: white;
     color: black;
-
 }
 
-#component1 .product-image,
-#component2 .product-image,
-#component1 .product-description,
-#component2 .product-description {
+.product-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding-right: 1em;
     float: left;
+    margin-left: auto;
 }
 
-#component1 .clearfix::after,
-#component2 .clearfix::after {
+.product-description {
+    width: 40%;
+    float: left;
+    margin-right: auto;
+}
+
+div.product3 {
+    display: flex;
+    width: 100%;
+    float: none;
+    flex-flow: row nowrap;
+}
+
+.clearfix::after {
     content: "";
     display: block;
     clear: both;
+}
+
+.pricing p {
+    margin-top: 0;
+}
+
+.component3 {
+    position: relative;
+    padding: 1em 0.75em 2em;
+}
+
+.component3::after,
+.component4::after {
+    content: "SALE";
+    background: red;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: -40px;
+    padding: 0.75em 2em;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.component h1 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5em;
+    font-size: 1.5rem;
+}
+
+.component3 .image-color-container {
+    width: 30%;
+    min-width: 300px;
+    margin: 1em 0 2em;
+}
+
+.component3 .pricing {
+    width: 30%;
+    align-self: baseline;
+}
+
+.component3 .description {
+    width: 30%;
+    align-self: baseline;
+}
+
+.box-container {
+    margin-top: 2em;
+    width: 100%;
+    max-width: 300px;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(14, 14, 14);
+}
+
+.blue-box {
+    background-color: rgb(0, 89, 255)
+}
+
+.red-box {
+    background-color: rgb(255, 44, 44)
+}
+
+.yellow-box {
+    background-color: rgb(255, 238, 0);
+}
+
+.green-box {
+    background-color: rgb(73, 153, 73);
+}
+
+.brown-box {
+    background-color: rgb(107, 67, 49);
+}
+
+.component4 {
+    display: grid;
+    grid-template-columns: 1rem 1fr 1rem;
+    grid-template-rows: 4rem 1fr 3rem;
+    padding: 0;
+    gap: 1rem;
+}
+
+.component4 h1 {
+    grid-column: 1 / -1;
+}
+
+.product4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0;
+    gap: 1rem;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.product4 .image-color {
+    display: block;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.product4-image {
+    max-width: 100%;
+}
+
+button.button4 {
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 6 / 7;
+    border-top: 5px solid black;
+    padding: 0.5em;
+    font-size: 1.25rem;
+}
+
+button.button4:hover {
+    background-color: white;
+    color: black;
 }
